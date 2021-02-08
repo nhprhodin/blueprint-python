@@ -1,0 +1,47 @@
+# Temporary and binary files
+__pycache__/
+*.py[cod]
+.cache/*
+*/.ipynb_checkpoints/*
+.DS_Store
+.mypy_cache
+*.log
+.mypy_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Project files
+.idea
+tags
+
+# Distribution and packaging
+*.egg
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+build/
+dist/
+sdist/
+MANIFEST
+
+# Unit test and coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+.pytest_cache/
+cover/
+
+# Sphinx docs
+docs/_build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
