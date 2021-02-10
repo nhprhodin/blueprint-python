@@ -6,7 +6,7 @@ from blueprint.blueprint import Blueprint
 class BlueprintTest(unittest.TestCase):
     def test_multiply_ints_signs(self):
         """
-        Test that multiply_ints correctly accounts for the sign of the arguments.
+        Test that multiply_ints correctly accounts for the signs of the arguments.
         """
 
         result = Blueprint.multiply_ints(1, 1)
@@ -31,7 +31,7 @@ class BlueprintTest(unittest.TestCase):
         string_input = "not_a_number"
         self.assertRaises(TypeError, Blueprint.multiply_ints, int_input, string_input)
 
-        float_input = float(7)
+        float_input = float(10)
         self.assertRaises(TypeError, Blueprint.multiply_ints, int_input, float_input)
 
         dict_input = {}
