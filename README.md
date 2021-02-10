@@ -1,11 +1,13 @@
 # blueprint-python
-A template repository for Python projects.
+A template repository for Python projects. Includes a template class ( Blueprint), a class call (run.py), unit tests, 
+and a setup.py enabling installation as a Python package.
 
 ## Preliminaries
-Tested on Ubuntu 
-Python version >=3.7 to enable type annotation.
+- Tested on Ubuntu 18.04, bionic
 
-    virtualenv -p python3.7 venv
+- Python version >=3.7 to enable type annotation.
+
+        virtualenv -p python3.7 venv
 
 ## Dependencies
     pip install --upgrade pip
