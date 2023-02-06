@@ -4,7 +4,7 @@ import logging
 # --- Format logger for print statements
 FORMAT = '%(asctime)-15s %(levelname)-7s %(message)s'
 TIMESTAMP = '%Y-%m-%d %H:%M:%S'
-LOGVERBOSITY = 'INFO'
+LOGVERBOSITY = 'DEBUG'
 logging.basicConfig(level=os.getenv("LOGLEVEL", LOGVERBOSITY), format=FORMAT, datefmt=TIMESTAMP)
 logger = logging.getLogger(__name__)
 
