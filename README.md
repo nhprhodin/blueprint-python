@@ -5,20 +5,34 @@ and a setup.py enabling installation as a Python package.
 ## Preliminaries
 - Tested on Ubuntu 18.04, bionic
 
-- Python version >=3.7 to enable type annotation.
+- Uses Python version >=3.7 to enable type annotation
+
+- Compatible with tox for code quality checks and running unit tests
+
+        sudo apt update
+        sudo apt install tox
+
+## Usage as Template
+1) Rename instances of "blueprint" in package, class calls, tests and setup files.
+
+2) Make any necessary adjustments to the setup.py. Consider license.
+
+3) Ensure the python version of the basepython arguments in tox.ini match the python_requires argument in setup.py
+
+3) Install dependencies
+   
+        pip install --upgrade pip
+        pip install -r requirements*.txt
+
+5) Install package as editable 
+        
+        pip install -e .
+
+## Best Practices
+
+- Set up a virtual environment
 
         virtualenv -p python3.7 venv
-
-## Dependencies
-    pip install --upgrade pip
-    pip install -r requirements.txt
-    pip install -r requirements-dev.txt
-    pip install -r requirements-test.txt
-
-## Installation
-Install package as editable
-
-    pip install -e .
 
 ## Resources
 For information on python packages, see PyPA docs:
