@@ -17,5 +17,5 @@ if __name__ == "__main__":
     blueprinter = Blueprint()
 
     # --- Run method
-    result = blueprinter.multiply_ints(5, 7)
+    result = blueprinter.multiply_numbers(5, 7)
     logger.info('Result is: %s', result)
