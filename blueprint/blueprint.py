@@ -6,8 +6,11 @@ logger = logging.getLogger("run")
 
 class Blueprint:
 
-    def __init__(self):
+    def __init__(self, config):
         logger.debug("Creating Blueprint.")
+        self.config = config
+        if self.config['GENERAL'].getfloat('THRESHOLD') > 1:
+            logger.info("Configuration file was correcty forwarded to Blueprint object during instantiation.")
 
     @staticmethod
     def multiply_numbers(xx: Union[float, int], yy: Union[float, int]) -> float:
