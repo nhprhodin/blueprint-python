@@ -28,6 +28,19 @@ and a setup.py enabling installation as a Python package.
         
         pip install -e .
 
+## Run
+
+    usage: run.py [-h] -c CONFIG [-l LOG_LEVEL]
+    
+    Parses input.
+    
+    required arguments:
+      -c CONFIG, --config CONFIG            Path to config file.
+    
+    optional arguments:
+      -h, --help                            show this help message and exit
+      -l LOG_LEVEL, --loglevel LOG_LEVEL    Set log level. ['CRITICAL', 'ERROR', 'WARNING', 'INFO', 'DEBUG']
+
 ## Best Practices
 
 - Set up a virtual environment
