@@ -3,32 +3,31 @@ A template repository for Python projects. Includes a template class ( Blueprint
 and a setup.py enabling installation as a Python package.
 
 ## Preliminaries
-- Tested on Ubuntu 18.04, bionic
+- Tested on Linux-MANJARO
 
-- Uses Python version >=3.7 to enable type annotation
+- Uses Python 3.10 (version >=3.7 to enable type annotation)
 
-- Compatible with tox for code quality checks and running unit tests
+- Compatible with tox for code quality checks and unit testing
 
-        sudo apt update
-        sudo apt install tox
+        pip install --upgrade pip
+        pip install tox
 
 ## Usage as Template
 1) Rename instances of "blueprint" in package, class calls, tests and setup files.
 
 2) Make any necessary adjustments to the setup.py. Consider license.
 
-3) Ensure the python version of the basepython arguments in tox.ini match the python_requires argument in setup.py
-
 3) Install dependencies
    
         pip install --upgrade pip
         pip install -r requirements*.txt
 
-5) Install package as editable 
+4) Install package as editable 
         
         pip install -e .
 
 ## Run
+Run package on input:
 
     usage: run.py [-h] -c CONFIG [-l LOG_LEVEL]
     
@@ -41,11 +40,15 @@ and a setup.py enabling installation as a Python package.
       -h, --help                            show this help message and exit
       -l LOG_LEVEL, --loglevel LOG_LEVEL    Set log level. ['CRITICAL', 'ERROR', 'WARNING', 'INFO', 'DEBUG']
 
+Run tox:
+
+    tox
+
 ## Best Practices
 
 - Set up a virtual environment
 
-        virtualenv -p python3.7 venv
+        virtualenv -p python3.10 venv
 
 ## Resources
 For information on python packages, see PyPA docs:

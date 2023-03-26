@@ -30,13 +30,21 @@ class BlueprintTest(unittest.TestCase):
         float_input = float(1)
 
         string_input = "not_a_number"
-        self.assertRaises(TypeError, Blueprint.multiply_numbers, int_input, string_input)
-        self.assertRaises(TypeError, Blueprint.multiply_numbers, float_input, string_input)
+        self.assertRaises(
+            TypeError, Blueprint.multiply_numbers, int_input, string_input
+        )
+        self.assertRaises(
+            TypeError, Blueprint.multiply_numbers, float_input, string_input
+        )
 
         dict_input = {}
         self.assertRaises(TypeError, Blueprint.multiply_numbers, int_input, dict_input)
-        self.assertRaises(TypeError, Blueprint.multiply_numbers, float_input, dict_input)
+        self.assertRaises(
+            TypeError, Blueprint.multiply_numbers, float_input, dict_input
+        )
 
         list_input = []
         self.assertRaises(TypeError, Blueprint.multiply_numbers, int_input, list_input)
-        self.assertRaises(TypeError, Blueprint.multiply_numbers, float_input, list_input)
+        self.assertRaises(
+            TypeError, Blueprint.multiply_numbers, float_input, list_input
+        )
