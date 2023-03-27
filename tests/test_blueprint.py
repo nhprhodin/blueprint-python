@@ -23,7 +23,7 @@ class BlueprintTest(unittest.TestCase):
 
     def test_multiply_numbers_types(self):
         """
-        Test that multiply_numbers raises TypeError if an input argument is not of type int or float.
+        Test that multiply_numbers raises TypeError if arguments not type int or float.
         """
 
         int_input = int(1)

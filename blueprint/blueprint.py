@@ -10,7 +10,7 @@ class Blueprint:
         self.config = config
         if self.config["GENERAL"].getfloat("THRESHOLD") > 1:
             logger.info(
-                "Configuration file was correctly forwarded to Blueprint object during instantiation."
+                "Config. correctly forwarded to Blueprint object during instantiation."
             )
 
     @staticmethod
