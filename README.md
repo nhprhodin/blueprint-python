@@ -1,3 +1,5 @@
+[![tox](https://github.com/nhprhodin/blueprint-python/actions/workflows/tox.yml/badge.svg)](https://github.com/nhprhodin/blueprint-python/actions/workflows/tox.yml)
+
 # blueprint-python
 A template repository for Python projects. Includes a template class ( Blueprint), a class call (run.py), unit tests, 
 and a setup.py enabling installation as a Python package.
