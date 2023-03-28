@@ -1,4 +1,4 @@
-name: tox-python-package
+name: tox-package
 
 on: [push]
 
