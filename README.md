@@ -1,4 +1,5 @@
 [![tox-package](https://github.com/nhprhodin/blueprint-python/actions/workflows/tox.yml/badge.svg)](https://github.com/nhprhodin/blueprint-python/actions/workflows/tox.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # blueprint-python
 A template repository for Python projects. Includes a template class ( Blueprint), a class call (run.py), unit tests, 
