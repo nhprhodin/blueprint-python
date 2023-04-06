@@ -1,9 +1,10 @@
-[![tox-package](https://github.com/nhprhodin/blueprint-python/actions/workflows/tox.yml/badge.svg)](https://github.com/nhprhodin/blueprint-python/actions/workflows/tox.yml)
+[![tox-CI](https://github.com/nhprhodin/blueprint-python/actions/workflows/tox.yml/badge.svg)](https://github.com/nhprhodin/blueprint-python/actions/workflows/tox.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # blueprint-python
 A template repository for Python projects. Includes a template class ( Blueprint), a class call (run.py), unit tests, 
-and a setup.py enabling installation as a Python package.
+and a setup.py enabling installation as a Python package. A CI pipeline for testing, coverage, linting and code 
+formatting is set up using tox and GitHub Actions.
 
 ## Preliminaries
 - Tested on Linux-MANJARO

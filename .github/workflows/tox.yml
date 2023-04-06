@@ -1,4 +1,4 @@
-name: tox-package
+name: tox-CI
 
 on: [push]
 
