@@ -52,7 +52,15 @@ Run tox:
 
 - Set up a virtual environment
 
-        virtualenv -p python3.10 venv
+        virtualenv -p python3.11 venv
+
+- To deactivate a venv
+
+        deactivate
+
+- To remove a venv
+        
+        rm -rf venv/
 
 ## Resources
 For information on python packages, see PyPA docs:
